@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Campare</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+
+  <div id="container"> <!--start container-->
+  	<header> <!--start header-->
+
+          <div class="logo"> <!--start logo-->
+             <a href="index.html"><img src="img/logo6.png"></a>
+          </div> <!--end logo-->
+
+          <div class="heading"> <!--start heading-->
+             <h1> welcome to ocean gate</h1>
+             <p> we deal in all types of storage devices </p>
+          </div> <!--end heading-->
+
+      </header> <!--end header--> 
+      
+      <div class="nav-bar"> <!--start nav-bar-->
+         <nav> 
+           <ul>
+              <li><a href="index.html"> home </a></li>
+              <li><a href="gallery.html"> gallery </a></li>
+              <li><a href="compare.html"> compare </a></li>
+              <li><a href="aboutus.html"> about us </a></li>
+              <li><a href="contactus.html"> contact us </a></li>
+          </ul>   
+        </nav> 
+      </div> <!--end nav-bar-->
+
+      <aside> <!--start aside bar-->
+        <h2> brands </h2>
+        <ul>
+          <li><a href="toshiba.html"> toshiba </a></li>
+          <li><a href="samsung.html"> samsung </a></li>
+          <li><a href="akitio.html"> Akitio </a></li>
+          <li><a href="adata.html"> Adata </a></li>
+          <li><a href="seagate.html"> Sea Gate </a></li>
+          <li><a href="lacie.html"> LaCie </a></li> 
+          <li><a href="sandisk.html"> sanDisk </a></li>
+          <li><a href="western.html"> Western Digital </a></li>
+        </ul>
+      </aside> <!--end aside bar-->
+        
+      <section class="product-section"> <!--start content area-->
+         
+        <h1> product comparison </h1>
+     	  <div class="left">
+      <select id="option_left" onChange="abc()">
+                    <option value="0"> ------ Select Device------</option>
+                    <option value="1"> SAMSUNG PORTABLE SSD X5 </option>
+                    <option value="2"> Samsung SSD 860 QVO</option>
+                    <option value="3"> Samsung SSD 970 Pro </option> 
+                    <option value="4"> Toshiba Portable </option>
+                    <option value="5"> Toshiba 900 Portable SSD </option>
+                    <option value="6"> Toshiba SSD 512gb </option>
+                    <option value="7"> Seagate 600 SSD </option>
+                    <option value="8"> Seagate Barracuda XT (3TB) </option>
+                    <option value="9"> Seagate Barracuda 7200.11 1.5TB </option>
+                    <option value="10"> Akitio ThunderGo (1TB) </option>
+                    <option value="11"> Akitio SK-3501 Super-S3 </option>
+                    <option value="12"> Akitio Node Lite With Intel Optane SSD </option>
+                    <option value="13"> LaCie Little Big Disk Thunderbolt 2 </option>
+                    <option value="14"> LaCie Fuel </option>
+                    <option value="15"> LaCie Mirror (1TB) </option>
+                    <option value="16"> SanDisk Extreme Portable </option>
+                    <option value="17"> SanDisk Extreme 900 Portable SSD </option>
+                    <option value="18"> SanDisk Connect Wireless Stick (32GB) </option>
+                    <option value="19"> Western Digital My Passport Pro </option>
+                    <option value="20"> Western Digital My Passport Wireless (1TB) </option>
+                    <option value="21"> Western Digital My Passport Wireless (1TB) </option>
+                    <option value="22"> ADATA SE730H External SSD </option>
+                    <option value="23"> ADATA Premier Pro SP900 M.2 SATA (256GB) </option>
+                    <option value="24"> Adata DashDrive Elite HE720 (500GB) </option>  
+            </select>
+            
+            
+            <table border="1" id="table" style="display:none" >
+            
+              <tr>                  
+                    <td colspan="2"> <img src="" height="200" width="260" id="img"> </td>               
+                </tr>
+                
+                
+                <tr>
+                  <td> Type </td>
+                    <td id="ver"> </td>
+                </tr>
+                
+                <tr>
+                  <td> Storage Capacity </td>
+                    <td id="mod"> </td>
+                </tr>
+                
+                <tr>
+                  <td> Rotation Speed </td>
+                    <td id="speci"> </td>
+                </tr>
+
+                <tr>
+                  <td> Ports </td>
+                    <td id="ports"> </td>
+                </tr>
+            
+            
+            </table>
+
+    </div> <!--left-->
+    
+    
+    
+    
+      
+     <div class="right">
+    
+      
+          <select id="option_right" onChange="xyz()">
+                <option value="0"> ------ Select Device------</option>
+                    <option value="1"> SAMSUNG PORTABLE SSD X5 </option>
+                    <option value="2"> Samsung SSD 860 QVO</option>
+                    <option value="3"> Samsung SSD 970 Pro </option> 
+                    <option value="4"> Toshiba Portable </option>
+                    <option value="5"> Toshiba 900 Portable SSD </option>
+                    <option value="6"> Toshiba SSD 512gb </option>
+                    <option value="7"> Seagate 600 SSD </option>
+                    <option value="8"> Seagate Barracuda XT (3TB) </option>
+                    <option value="9"> Seagate Barracuda 7200.11 1.5TB </option>
+                    <option value="10"> Akitio ThunderGo (1TB) </option>
+                    <option value="11"> Akitio SK-3501 Super-S3 </option>
+                    <option value="12"> Akitio Node Lite With Intel Optane SSD </option>
+                    <option value="13"> LaCie Little Big Disk Thunderbolt 2 </option>
+                    <option value="14"> LaCie Fuel </option>
+                    <option value="15"> LaCie Mirror (1TB) </option>
+                    <option value="16"> SanDisk Extreme Portable </option>
+                    <option value="17"> SanDisk Extreme 900 Portable SSD </option>
+                    <option value="18"> SanDisk Connect Wireless Stick (32GB) </option>
+                    <option value="19"> Western Digital My Passport Pro </option>
+                    <option value="20"> Western Digital My Passport Wireless (1TB) </option>
+                    <option value="21"> Western Digital My Passport Wireless (1TB) </option>
+                    <option value="22"> ADATA SE730H External SSD </option>
+                    <option value="23"> ADATA Premier Pro SP900 M.2 SATA (256GB) </option>
+                    <option value="24"> Adata DashDrive Elite HE720 (500GB) </option>   
+            </select>
+            
+            
+            <table border="1" id="table1" style="display:none" >
+            
+              <tr>                  
+                    <td colspan="2"> <img src="" height="200" width="260" id="img1"> </td>               
+                </tr>
+                
+                
+                 <tr>
+                  <td> Type </td>
+                    <td id="ver1"> </td>
+                </tr>
+                
+                <tr>
+                  <td> Storage Capacity </td>
+                    <td id="mod1"> </td>
+                </tr>
+                
+                <tr>
+                  <td> Rotation Speed </td>
+                    <td id="speci1"> </td>
+                </tr>
+
+                <tr>
+                  <td> Ports </td>
+                    <td id="ports1"> </td>
+                </tr>
+            
+            
+            </table>
+
+    </div> <!--right-->
+    
+    
+    
+    <script>
+  
+    var a,b;
+    function abc(){
+    
+
+   a=document.getElementById('option_left').value;
+  if(a==b){
+    
+      alert("same product can't compare");
+      document.getElementById('table').style.display="none";
+      document.getElementById('table1').style.display="none";
+  }
+  
+  else{
+    
+    if(a==1){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/samsung1.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="Thunderbolt 3";       
+    }
+    
+      else if(a==2){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/samsung2.jpg";
+      document.getElementById('ver').innerHTML="Internal";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="SATA";          
+    }
+    
+      else if(a==3){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/samsung3.jpg";
+      document.getElementById('ver').innerHTML="Internal";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="None";        
+    }
+    
+    else if(a==4){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/toshiba1.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="2 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="USB-C";         
+    }
+
+    else if(a==5){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/toshiba2.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="2 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="USB-C";       
+    }
+    else if(a==6){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/toshiba3.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="2 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="USB-C";       
+    }
+    else if(a==7){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/akitio1.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="7200 rpm";
+      document.getElementById('ports').innerHTML="USB 2.0, USB 3.0, Thunderbolt";       
+    }
+    else if(a==8){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/akitio2.jpg";
+      document.getElementById('ver').innerHTML="Internal";
+      document.getElementById('mod').innerHTML="2 TB";
+      document.getElementById('speci').innerHTML="7,200 rpm";
+      document.getElementById('ports').innerHTML="SATA";        
+    }
+    else if(a==9){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/akitio3.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="905 GB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="Thunderbolt";       
+    }
+    else if(a==10){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/adata1.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="500 GB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="USB-C";       
+    }
+    else if(a==11){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/adata2.jpg";
+      document.getElementById('ver').innerHTML="Internal";
+      document.getElementById('mod').innerHTML="256 GB";
+      document.getElementById('speci').innerHTML="None";
+      document.getElementById('ports').innerHTML="SATA";        
+    }
+    else if(a==12){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/adata3.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="500 GB";
+      document.getElementById('speci').innerHTML="5400 rpm";
+      document.getElementById('ports').innerHTML="USB 3.0";       
+    }
+    else if(a==13){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/western1.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="4 TB";
+      document.getElementById('speci').innerHTML="7200 rpm";
+      document.getElementById('ports').innerHTML="Thunderbolt";       
+    }
+    else if(a==14){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/western2.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="7200 rpm";
+      document.getElementById('ports').innerHTML="Thunderbolt";       
+    }
+    else if(a==15){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/western3.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="5400 rpm";
+      document.getElementById('ports').innerHTML="Thunderbolt";       
+    }
+    else if(a==16){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/lacie1.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="Thunderbolt";       
+    }
+    else if(a==17){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/lacie2.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="5400 rpm";
+      document.getElementById('ports').innerHTML="USB 3.0";       
+    }
+    else if(a==18){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/lacie3.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="5400 rpm";
+      document.getElementById('ports').innerHTML="USB 3.0";       
+    }
+    else if(a==19){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/sandisk1.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="2 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="USB-C";       
+    }
+    else if(a==20){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/sandisk2.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="2 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="USB-C";       
+    }
+    else if(a==21){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/sandisk3.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="32 GB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="USB-C";       
+    }
+    else if(a==22){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/seagate1.jpg";
+      document.getElementById('ver').innerHTML="External";
+      document.getElementById('mod').innerHTML="1 TB";
+      document.getElementById('speci').innerHTML="SSD";
+      document.getElementById('ports').innerHTML="USB-C";       
+    }
+    else if(a==23){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/seagate2.jpg";
+      document.getElementById('ver').innerHTML="Internal";
+      document.getElementById('mod').innerHTML="3 TB";
+      document.getElementById('speci').innerHTML="7200 rpm";
+      document.getElementById('ports').innerHTML="SATA";        
+    }
+    else if(a==24){
+    
+      document.getElementById('table').style.display="block";
+      document.getElementById('img').src="img/seagate3.jpg";
+      document.getElementById('ver').innerHTML="Internal";
+      document.getElementById('mod').innerHTML="1.5 TB";
+      document.getElementById('speci').innerHTML="7200 rpm";
+      document.getElementById('ports').innerHTML="SATA";        
+    }
+
+    else{
+      
+      document.getElementById('table').style.display = "none";
+    }
+    
+  }
+  
+}
+
+function xyz(){
+    
+   b=document.getElementById('option_right').value;
+  if(b==a){
+    
+      alert("same product can't compare");
+      document.getElementById('table').style.display="none";
+      document.getElementById('table1').style.display="none";
+  }
+  
+  else{
+    
+    if(b==1){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/samsung1.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="Thunderbolt 3";        
+    }
+    
+      else if(b==2){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/samsung2.jpg";
+      document.getElementById('ver1').innerHTML="Internal";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="SATA";         
+    }
+    
+      else if(b==3){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/samsung3.jpg";
+      document.getElementById('ver1').innerHTML="Internal";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="None";       
+    }
+    
+    else if(b==4){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/toshiba1.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="2 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="USB-C";          
+    }
+
+    else if(b==5){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/toshiba2.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="2 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="USB-C";        
+    }
+    else if(b==6){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/toshiba3.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="2 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="USB-C";        
+    }
+    else if(b==7){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/akitio1.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="7200 rpm";
+      document.getElementById('ports1').innerHTML="USB 2.0, USB 3.0, Thunderbolt";        
+    }
+    else if(b==8){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/akitio2.jpg";
+      document.getElementById('ver1').innerHTML="Internal";
+      document.getElementById('mod1').innerHTML="2 TB";
+      document.getElementById('speci1').innerHTML="7,200 rpm";
+      document.getElementById('ports1').innerHTML="SATA";       
+    }
+    else if(b==9){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/akitio3.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="905 GB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="Thunderbolt";        
+    }
+    else if(b==10){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/adata1.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="500 GB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="USB-C";        
+    }
+    else if(b==11){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/adata2.jpg";
+      document.getElementById('ver1').innerHTML="Internal";
+      document.getElementById('mod1').innerHTML="256 GB";
+      document.getElementById('speci1').innerHTML="None";
+      document.getElementById('ports1').innerHTML="SATA";       
+    }
+    else if(b==12){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/adata3.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="500 GB";
+      document.getElementById('speci1').innerHTML="5400 rpm";
+      document.getElementById('ports1').innerHTML="USB 3.0";        
+    }
+    else if(b==13){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/western1.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="4 TB";
+      document.getElementById('speci1').innerHTML="7200 rpm";
+      document.getElementById('ports1').innerHTML="Thunderbolt";        
+    }
+    else if(b==14){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/western2.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="7200 rpm";
+      document.getElementById('ports1').innerHTML="Thunderbolt";        
+    }
+    else if(b==15){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/western3.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="5400 rpm";
+      document.getElementById('ports1').innerHTML="Thunderbolt";        
+    }
+    else if(b==16){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/lacie1.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="Thunderbolt";        
+    }
+    else if(b==17){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/lacie2.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="5400 rpm";
+      document.getElementById('ports1').innerHTML="USB 3.0";        
+    }
+    else if(b==18){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/lacie3.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="5400 rpm";
+      document.getElementById('ports1').innerHTML="USB 3.0";        
+    }
+    else if(b==19){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/sandisk1.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="2 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="USB-C";        
+    }
+    else if(b==20){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/sandisk2.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="2 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="USB-C";        
+    }
+    else if(b==21){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/sandisk3.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="32 GB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="USB-C";        
+    }
+    else if(b==22){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/seagate1.jpg";
+      document.getElementById('ver1').innerHTML="External";
+      document.getElementById('mod1').innerHTML="1 TB";
+      document.getElementById('speci1').innerHTML="SSD";
+      document.getElementById('ports1').innerHTML="USB-C";        
+    }
+    else if(b==23){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/seagate2.jpg";
+      document.getElementById('ver1').innerHTML="Internal";
+      document.getElementById('mod1').innerHTML="3 TB";
+      document.getElementById('speci1').innerHTML="7200 rpm";
+      document.getElementById('ports1').innerHTML="SATA";       
+    }
+    else if(b==24){
+    
+      document.getElementById('table1').style.display="block";
+      document.getElementById('img1').src="img/seagate3.jpg";
+      document.getElementById('ver1').innerHTML="Internal";
+      document.getElementById('mod1').innerHTML="1.5 TB";
+      document.getElementById('speci1').innerHTML="7200 rpm";
+      document.getElementById('ports1').innerHTML="SATA";       
+    }
+    else{
+      
+      document.getElementById('table1').style.display = "none";
+    }
+    
+  }
+  
+}
+
+  
+  </script>
+
+         </section><!--End content area-->
+
+        <footer> <!--start footer-->
+      <div class="info1"> <!--start footer div-1-->
+        <h2> customer care: </h2>
+        <ul>
+            <p> call us: </p>
+          <li><a href="#"> 03062008991 </a></li>
+          <p> email us for quick response: </p>
+          <li><a href="mailto:noorulislan95@gmail.com"><span>  noorulislan95@gmail.com  </span></a></li>
+          <p> adress: </p>
+          <li><a href="#"> suite # 102-103, Progressive Center, 30-A Shahrah-e-Faisal Rd, Pakistan Employees Co-Operative Housing Society Block 6 PECHS, Karachi, Karachi City, Sindh 75400. </a></li>
+        </ul>
+      </div> <!--end footer div-1-->
+      <div class="info2"> <!--start footer div-2-->
+          <h2> information: </h2>
+        <ul>
+          <li><a href="services.html"> our services </a></li>
+          <li><a href="terms.html"> terms and conditions </a></li>
+          <li><a href="policy.html"> privacy policy </a></li>
+        </ul>
+      </div> <!--end footer div-2-->
+      <div class="info3"> <!--start footer div-3-->
+        <h2> quick links </h2>
+        <ul>
+          <li><a href="aboutus.html">about us </a></li>
+          <li><a href="contactus.html"> contact us </a></li>
+          <li><a href="ourteam.html"> our team </a></li>
+      </ul>
+      </div> <!--end footer div-3-->
+      <div class="info4"> <!--start footer div-4-->
+        <p> &copy;2018 <a href="index.html"> ocean gate </a>all rights reserved. </p>
+      </div> <!--end footer div-4-->
+     </footer> <!--end footer-->
+
+
+  </div> <!--end container-->
+</body>
+</html>
